@@ -1,0 +1,22 @@
+/* TYPE 1 rumus hex=  #rrggbb max_ff min_00
+   TYPE 2 rumus (r, g, b) max_255 min_0*/
+
+
+h1 {
+	color: #00BB55;
+}
+
+h2 {
+	color: rgb(200,200,200);
+}
+h1 {
+	border-style: solid;
+	border-width: 10px;
+	border-color: #0000aa;
+}
+h2 {
+	border: 5px dotted #000000;
+}
+h3{
+	border: 5px dashed #000000;
+}

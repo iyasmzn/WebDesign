@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>MENU</title>
+    <meta content="">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<div id="menu" class="clearfix">
+	 		<ul id="ul_luar">
+  			<li id="firstFirst"><a href="#">Home</a></li>
+  			<li><a href="#">Service</a></li>
+  			<li id="mouseover" onmouseover="mouseover()" onmouseout="mouseout()">
+  				<a href="#">Portofolio</a>
+  				<ul id="ul_dalam">
+  					<li style="padding-top: 10px;"><a style="border-top: none;" href="#">Brushes</a></li>
+  					<li><a href="#">Textures</a></li>
+  					<li><a href="#">Icon Sets</a></li>
+  					<li><a href="#">Patterns</a></li>
+  					<li style="border-radius: 0px 0px 10px 10px;padding-bottom: 20px;"><a style="border-bottom: none;" href="#">Portofolio</a></li> 
+  				</ul>
+  			</li>
+  			<li><a href="#">Freebies</a></li>
+  			<li><a href="#">Showcase</a></li>
+  			<li><a href="#">Our Blog</a></li>
+  			<li><a href="#">About Us</a></li>
+  			<li><a href="#">Contact</a></li>
+  			<li id="firstEnd" style="width: 212px;border-radius: 0px 5px 5px 0px;"><a style="border-radius: 0px 5px 5px 0px;" href="#">By PremiumPixels.com</a></li>
+  		</ul>
+  	</div>
+  	<script>
+  		var x = document.getElementById('ul_dalam');
+	  		x.style.opacity="0";
+    	function mouseover() {
+    		var zero = document.getElementById('ul_dalam'); 
+    		zero.style.opacity="1";
+    		zero.style.display="block";
+    	} 
+    	function mouseout() {
+    		var zero = document.getElementById('ul_dalam'); 
+    		zero.style.opacity="0";
+    	}
+    </script>
+  </body>
+</html>

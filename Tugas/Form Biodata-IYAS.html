@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Biodata</title>
+	<style type="text/css">
+		form {margin: auto;}
+		h1 {border-top: 0;border-right: 0;border-left: 0;border-bottom: 3px; border-style: double;border-color: red;max-width: 600px;font-size: 20px;padding-top: 0;padding-bottom: 20px;text-align: center;}
+		form {border: 3px double red;max-width: 600px;padding-top: 10px;padding-bottom: 20px;}
+		.ttl {width: 40px;}
+		.ttl2 {width: 65px;}
+		td {padding: 3px;padding-top: 5px;padding-left: 5px;padding-bottom: 5px;padding-right: 5px;}
+		.div {padding-left: 250px;}
+	</style>
+</head>
+<body>	
+	<form>
+		<h1>Form Input Biodata</h1>
+		<table>
+			<tr>
+				<td>
+					<label for="nama1">Nama Lengkap</label>
+				</td>
+				<td>:</td>
+				<td><input type="text" id="nama1"></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="t4">Tempat, Tanggal Lahir</label>
+				</td>
+				<td>:</td>
+				<td>
+					<input type="text" id="t4">
+					<b>,</b>
+					<input class="ttl" type="number" placeholder="day">
+					/
+					<input class="ttl" type="number" placeholder="month">
+					/
+					<input class="ttl2" type="number" placeholder="year">
+				</td>
+			</tr>
+			<tr>
+				<td><label for="alm">Alamat</label></td>
+				<td>:</td>
+				<td>
+					<label>
+						<textarea id="alm" placeholder="Alamat Lengkap Anda" cols="44px" rows="3.5px"></textarea>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="no">No. Telp/HP</label></td>
+				<td>:</td>
+				<td><input id="no" type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>Jenis Kelamin</td>
+				<td>:</td>
+				<td>
+					<input id="l" type="radio" name="gender">
+					<label for="l">Laki-Laki</label>
+					<input id="p" type="radio" name="gender">
+					<label for="p">Perempuan</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label for="ag">Agama</label></td>
+				<td>:</td>
+				<td><input type="text" id="ag"></td>
+			</tr>
+			<tr>
+				<td>Hoby</td>
+				<td>:</td>
+				<td>
+					<input type="checkbox" id="1">
+					<label for="1">Baca Buku</label>
+					<input type="checkbox" id="2">
+					<label for="2">Olah Raga</label>
+					<input type="checkbox" id="3">
+					<label for="3">Main Game</label>
+					<input type="checkbox" id="4">
+					<label for="4">Hiking</label>
+				</td>
+			</tr>
+		</table>
+		<div class="div">
+			<button>Submit</button>
+			<button>Clear!</button>
+		</div>	
+	</form>
+</body>
+</html>

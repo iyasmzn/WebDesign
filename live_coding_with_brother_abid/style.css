@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+}
+#header {
+	background: #333;
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.bg-masjid {
+	position: absolute;
+	right: 30px;
+	top: 0.5px;
+}
+#navbar {
+	background: #666;
+}
+#navbar span {
+	display: inline-block;
+}
+#navbar > span > a {
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	border-right: 1px solid #333;
+}
+#navbar > span:hover .drop-wrapper a{
+	display: block;
+	border-left: 2px solid black;
+}
+.drop-wrapper {
+	position: absolute;
+	transform: translateX(-6px);
+}
+.drop-wrapper a {
+	display: none;
+	font-size: 15px;
+	padding: 20px 30px 10px 10px;
+	background: #666;
+	border-bottom: 1px solid #333;
+	color: #fff;
+	text-decoration: none;
+}
+.drop-wrapper a:last-child {
+	border-bottom: none;
+}

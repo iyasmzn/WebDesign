@@ -1,0 +1,224 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+		<title>CALCULATOR</title>
+		<style>
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*CSS RESET END*/
+			.bg {
+				position: fixed;
+				z-index: -2;
+				transform: translateY(-9%);
+				background-size: cover;
+				width: 100%;
+				height: 100%;
+				background-image: url(https://images5.alphacoders.com/368/thumb-1920-368903.jpg);
+			}
+			.outer {
+				position: fixed;
+				left: 50%;
+				top: 1;
+				transform: translateX(-50%);
+				z-index: -1;
+				background-color: black;
+				width: 290px;
+				height: 89%;
+				border-radius: 15px;
+				box-shadow: 5px 5px 2px #404040;
+			}
+			.home {
+				border-radius: 10px;
+				position: absolute;
+				bottom: 13.5%;
+				right: 50%;
+				transform: translateX(50%);
+				width: 5%;
+				height: 4%;
+				background: #1c1c1c;
+				border-right: 1px solid gray;
+				border-bottom: 1px solid gray;
+			}
+			.home:hover {
+				background: #6b6b6b;
+				border-right: 1px solid white;
+				border-bottom: 1px solid white;
+			}
+			.title {
+				margin: auto;
+				margin-top: 4%;
+				width: 275px;
+				border: 4px solid #4a4a4a;
+				background-color: #4a4a4a;
+			}
+			p {
+				color: white;
+				font-family: sans-serif; 
+				font-size: 150%;
+				text-align: center;
+				border-bottom: 1px solid white;
+				padding: 10px;  
+				}
+			.kalkulator {
+				margin: auto;
+				width: 275px;
+				height: 62%;
+				border: 4px solid #4a4a4a;
+				background-color: #4a4a4a;
+			}
+			input {
+				font-family: 'Comfortaa', cursive;
+				text-align: right;
+				border: none;
+				color: white;
+				background-color: #4a4a4a;
+				width: 100%;
+				height: 7%;
+			}
+			input:last-child {
+				height: 13%;
+				font-size: 200%;
+			}
+			button {
+				border: 1px solid #4a4a4a;
+				background: #fafafa;
+				font-size: 150%;
+				font-family: 'Comfortaa', cursive;
+			}
+			button:hover {
+				background: #e3e3e3;
+			}
+			button::-moz-focus-inner { 
+  border: 0; 
+}
+			.tops {
+				width: 100%;
+				height: 15%;
+			}
+			.tops button{
+				float: left;
+				width: 25%;
+				height: 100%;
+			}
+			.number {
+				float: left;
+				width: 75%;
+				height: 65%;
+			}
+			.number button{
+				float: right;
+				background-color: white;
+				width: 33.333333333333333333333333333333333333333333%;
+				height: 25%;
+			}
+			.number button:hover {
+				background: #e3e3e3;			
+			}
+			.side {
+				width: 25%;
+				height: 65%;
+				float: right;
+			}
+			.side button {
+				width: 100%;
+				height: 25%;
+			}
+			.f_orange {
+				color: orange;
+			}
+			.f_big {
+				font-size: 270%;
+			}
+			.f_pad {
+				padding-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg"></div>
+		<div class="outer"></div>
+		<div>
+			<div class="screen"></div>
+			<button class="home"></button>
+		</div>
+		<div class="title">
+			<p>CALCULATOR</p>
+		</div>
+		<div class="kalkulator">
+			<div>
+				<input type="text" placeholder="0" readonly>
+			</div>
+				<input type="text" value="0" readonly>
+			<div class="tops">
+				<button class="f_orange">AC</button>
+				<button class="f_orange f_big f_pad">←</button>
+				<button>+/-</button>
+				<button class="f_big">÷</button>
+			</div>
+			<div class="number">
+				<button>9</button>
+				<button>8</button>
+				<button>7</button>
+				<button>6</button>
+				<button>5</button>
+				<button>4</button>
+				<button>3</button>
+				<button>2</button>
+				<button>1</button>
+				<button>.</button>
+				<button>0</button>
+				<button>%</button>
+			</div>
+			<div class="side">
+				<button>X</button>
+				<button>-</button>
+				<button>+</button>
+				<button>=</button>
+			</div>
+		</div>
+</html>
+	</body>

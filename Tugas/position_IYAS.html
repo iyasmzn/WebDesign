@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/png" href="https://icon-library.net/images/css-3-icon/css-3-icon-21.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Advent+Pro|Anton|Fredoka+One|Questrial&display=swap" rel="stylesheet">
+	<title>CSS POSITION</title>
+	<style type="text/css">
+		html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@keyframes spinnerRotate
+			{
+				from{-webkit-transform:rotate(0deg);}
+				to{-webkit-transform:rotate(360deg);}
+			}
+/* START STYLE HERE */
+	/* HEADER */
+		#header {
+			float: left;
+			width: 99%;
+			height: 180px;
+			box-sizing: border-box;
+			background-color: #fcb045;
+			border-radius: 0 0 100px 0;
+		}
+		#header img {
+			padding: 20px;
+			float: left;
+			width: 10%;
+			height: auto;
+		}
+		#header img:hover {
+			-webkit-animation-name: spinnerRotate;
+			-webkit-animation-duration: 2s;
+			-webkit-animation-iteration-count: infinite;
+			-webkit-animation-timing-function: linear;
+		}
+		#line { 
+			float: left;
+			font-size: 940%;
+		}
+		#header p {
+			padding-top: 40px;
+			float: left;
+			font-family: 'Anton', sans-serif;
+			font-size: 625%;
+			color: #6e6e6e;
+		}
+		#header span { color: black; }
+	/* FIXED BACKGROUND */
+		.bg {
+			background-size: cover;
+			position: fixed;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			transform: translateY(-40%);
+			background-image: url(https://images8.alphacoders.com/103/1037590.jpg); 
+		}
+	/* FIXED CEUE */
+		#ceue {
+			position: fixed;
+			bottom: 0;
+			right: 0;
+		}
+		#ceue img {
+			transform: translateY(10px);
+			width: 200px;
+			height: auto;
+		}
+	/* MENU */
+		#menu {
+			width: 100%;
+			z-index: 1;
+			position: relative;
+			margin: 0;
+			margin-bottom: 2%;
+			background-color: black;
+			border: 1px solid white;
+    		border-radius: 0 0 10px 10px;
+		}
+		#menu li {
+			width: 200px;
+			height: 50px;
+			float: left;
+			padding-left: 10px;
+			display: block;
+			padding-bottom: 10px;
+			border-right: 2px solid gray;
+		}
+		#menu li a {
+  			font-family: 'Advent Pro', sans-serif;
+			text-align: center;
+			font-size: 25px;
+			display: block;
+			padding: 20px;
+			color: white;
+			text-decoration: none;
+		}
+		#menu li:hover {
+			background: #888888;
+			transform: scale(1.05,1.05);
+			transition-duration: 0.1s;
+	        transition-timing-function: linear;
+		}
+		#menu li:first-child:hover{
+			background-color: gray;
+			border-radius: 0 0 0 10px;
+		}
+ 		.clearfix::after {
+  			content: "";
+  			clear: both;
+  			display: table;
+		}
+		#menu ul ul {
+			transform: translate(-10px,5px);
+			background-color: gray;
+			position: absolute;
+			opacity: 0;
+			box-shadow: 1px 1px 3px gray;
+			border-radius: 20px 20px 20px 20px;
+		}
+		#menu ul ul li a {
+			text-align: center;
+			font-size: 15px;
+			border-bottom: 1px solid white;
+
+		}
+		#menu ul li:hover ul {
+			font-weight: normal;
+			position: absolute;
+			top: 62px;
+			background-color: gray;
+			display: block;
+			opacity: 1;
+			transition-duration: 0.4s;
+	        transition-timing-function: linear;
+		}
+		#menu ul li ul li:hover, #menu ul li ul li:first-child:hover {
+			border-radius: 10px 10px 10px 10px; 
+			background-color: lightgray;
+		}
+		#menu ul ul li {
+			border-right: none;
+			float: none;
+			padding-right: 10px;
+		}
+	/* Layout 1 */
+		.home {
+			border-radius: 20px;
+			padding-top: 10px; 
+			padding-bottom: 50px; 
+			width: 95%;
+			margin: auto;
+			margin-bottom: 20px;
+			transform: translate(-50%);
+			position: relative;
+			left: 50%;
+			float: left;
+			background-color: rgba(250,250,250,0.8);
+			color: black;
+		}
+		h1 {
+			font-family: 'Fredoka One', cursive;
+			color: #ffab00;
+			text-shadow: 2px 2px 1px black;
+			text-align: center;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		.home p {
+			font-family: 'Questrial', sans-serif;
+			position: static;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-bottom: 10px;
+			font-size: 20px;
+			text-indent: 40px;
+		}
+		.home:last-child {
+			padding-bottom: 40px;
+		}
+	/* GALLERY */
+		.gallery {
+			width: 95%;
+			height: 1000px; 
+			background-color: none;
+			border: 3px solid black;
+			position: relative;
+			transform: translate(-50%);
+			left: 50%;
+		} 
+    	.picture {
+    		background-color: white;
+    		text-align: center;
+    		padding: 10px;
+    		width: 46.5%;
+    		height: 300px;
+    		margin: 10px;
+    		float: left;
+    	}
+    	.picture img {
+    		width: 100%;
+    		height: 250px;
+    		background-size: cover;
+    	}	
+    	.picture h2 {
+    		font-size: 40px;
+    	}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<img src="https://icon-library.net/images/css-3-icon/css-3-icon-21.jpg" >
+		<span id="line"> | </span>
+		<p><span>CSS</span> POSITION</p>
+	</div>
+	<div style="background-color: black; color: black">black</div>
+	<div id="menu" class="clearfix">
+		<ul>
+			<li>
+				<a href="#">Home</a></li>
+			<li><a href="#">Gallery</a>
+				<ul>
+					<li><a href="#">Photos</a></li>
+					<li><a href="#">Illustration</a></li>
+					<li><a href="#">Design</a></li>
+					<li><a href="#">Event</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Wallpaper</a>
+				<ul>
+					<li><a href="#">Anime</a></li>
+					<li><a href="#">Photography</a></li>
+					<li><a href="#">Abstract</a></li>
+					<li><a href="#">Simple</a></li>
+				</ul>
+			</li>
+			<li><a href="#">My Contact</a></li>
+		</ul>
+	</div>
+	<div class="bg"></div>
+	<div class="home">
+		<h1>HOME</h1><br><br>
+		<p>As designers, we are frequently and incorrectly reminded that our job is to “make things pretty.” We are indeed designers — not artists — and there is no place for formalism in good design. Web design has a function, and that function is to communicate the message for which the Web page was conceived. The medium is not the message.</p>
+		<p>Never is this principle more pertinent than when dealing with type, the bread and butter of Web-borne communication. A well-set paragraph of text is not supposed to wow the reader; the wowing should be left to the idea or observation for which the paragraph is a vehicle. In fact, the perfect paragraph is unassuming to the point of near invisibility. That is not to say that the appearance of your text should have no appeal at all. On the contrary: well-balanced, comfortably read typography is a thing of beauty; it’s just not the arresting sort of beauty that might distract you from reading.</p>
+		<p>As a young industry that champions innovation and rates its practitioners based on their ability to apprehend (sorry, “grok”) the continual emergence of new technologies, frameworks, protocols and data models, we are not particularly familiar with tradition. However, the practice of arranging type for optimal pleasure and comfort is a centuries-old discipline. As long ago as 1927, the noted typographer Jan Tschichold spoke of the typesetting “methods and rules upon which it is impossible to improve” — a set of rules it would be foolish to ignore.</p>
+		<p>So, please put your canvas element and data visualization API to one side just for a short while. We are about to spend a little time brushing up on our typesetting skills. It’s called “hypertext,” after all.</p>
+	</div>
+	<div class="home">
+		<h1>gallery</h1><br><br>
+		<div class="gallery">
+			<div class="picture">
+  				<img src="https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/3/2017/03/17121953/iStock-610259354.jpg">
+  				<h2>PHOTOS</h2>
+	  		</div>
+	  		<div class="picture">
+  				<img src="https://cf-images.us-east-1.prod.boltdns.net/v1/static/5539867212001/98f9a13b-a7d7-46d0-ab15-8d3310ecb272/d414d865-10c2-4708-9297-da8eb5fc2077/1920x1080/match/image.jpg">
+  				<h2>ILLUSTRATION</h2>
+	  		</div>
+	  		<div class="picture">
+  				<img src="https://shillingtoneducation.imgix.net/content/uploads/2016/08/Shillo-2019-Showreel-Hero-Image.jpg?fit=max&auto=format&q=55&cstinysrgb">
+  				<h2>DESIGN</h2>
+	  		</div><div class="picture">
+  				<img src="https://www.mch-group.com/-/media/mch-group/Images/Content/News/Blog/2017/2017-04/mch-group-live-marketing-aktivierung.jpg">
+  				<h2>EVENT</h2>
+	  		</div>
+			<p>bayangkan aja isinya foto-foto banyak :v</p>
+		</div>
+	</div>
+	<div id="ceue">
+		<img src="https://www.freeiconspng.com/uploads/anime-png-32.png">
+	</div>
+</body>
+</html>
