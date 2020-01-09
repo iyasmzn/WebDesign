@@ -12,20 +12,20 @@
 	<div id="header-sosmed">
 		<div class="flex-between color-blue container">
 			<div class="flex-row-center fa-xs" style="font-weight: bold">
-				<div class="hover-c-green" style="padding-right: 25px">
-					<i class="far fa-envelope"></i>&nbsp&nbsp&nbsp info@reen.com
+				<div style="padding-right: 25px">
+					<a class="color-blue hover-c-green" href="#header-sosmed"><i class="far fa-envelope"></i>&nbsp&nbsp&nbsp info@reen.com</a>
 				</div>
-				<div class="hover-c-green">
-					<i class="fas fa-mobile-alt"></i>&nbsp&nbsp&nbsp +00 (123) 456 78 90
+				<div>
+					<a class="color-blue hover-c-green" href="#header-sosmed"><i class="fas fa-mobile-alt"></i>&nbsp&nbsp&nbsp +00 (123) 456 78 90</a>
 				</div>
 			</div>
 			<div class="flex-row-center fa-xs">
-				<div class="flex-row-center w-25 fa-sm hover-bg-fb"><i class="fab fa-facebook-f"></i></div>
-				<div class="flex-row-center w-25 fa-sm hover-bg-google"><i class="fab fa-google-plus-g"></i></div>
-				<div class="flex-row-center w-25 fa-sm hover-bg-twitter"><i class="fab fa-twitter"></i></div>
-				<div class="flex-row-center w-25 fa-sm hover-bg-pin"><i class="fab fa-pinterest-p"></i></div>
-				<div class="flex-row-center w-25 fa-sm hover-bg-behance"><i class="fab fa-behance"></i></div>
-				<div class="flex-row-center w-25 fa-sm hover-bg-drib"><i class="fab fa-dribbble"></i></div>
+				<a class="flex-row-center w-25 fa-sm color-blue hover-bg-fb"><i class="fab fa-facebook-f"></i></a>
+				<a class="flex-row-center w-25 fa-sm color-blue hover-bg-google"><i class="fab fa-google-plus-g"></i></a>
+				<a class="flex-row-center w-25 fa-sm color-blue hover-bg-twitter"><i class="fab fa-twitter"></i></a>
+				<a class="flex-row-center w-25 fa-sm color-blue hover-bg-pin"><i class="fab fa-pinterest-p"></i></a>
+				<a class="flex-row-center w-25 fa-sm color-blue hover-bg-behance"><i class="fab fa-behance"></i></a>
+				<a class="flex-row-center w-25 fa-sm color-blue hover-bg-drib"><i class="fab fa-dribbble"></i></a>
 			</div>
 		</div>   
 	</div>
@@ -146,8 +146,36 @@
 	<div id="footer-1">
 		<div class="container flex-row flex-between" style="color: white;">
 			<div class="footer-box-1">
-				<h2 class="f-size-md-bold">WHO WE ARE</h2>
-				<img src="assets/images/logo.png" style="width: 120px;">
+				<h2 class="f-size-md-bold mb-20">WHO WE ARE</h2>
+				<img class="mb-20" src="assets/images/logo.png" style="width: 120px;">
+				<p class="f-size-nm-bold mb-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.<br>Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+				<a class="f-size-md-bold hover-c-green" href="#footer-1" style="color: #8496a8">More about us <i class="fa fa-arrow-right"></i></a>
+			</div>
+			<div class="footer-box-2">
+				<h2 class="f-size-md-bold mb-20">LATEST WORKS</h2>
+				<div class="thumb-box flex-row- flex-between" style="height: auto;">
+					<div class="thumb-img-1"></div>
+					<div class="thumb-img-2"></div>
+					<div class="thumb-img-3"></div>
+					<div class="thumb-img-4"></div>
+				</div>
+			</div>
+			<div class="footer-box-3">
+				<h2 class="f-size-md-bold mb-20">GET IN TOUCH</h2>
+				<p class="f-size-nm-bold mb-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Doloreiur quia commolu commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+				<a class="f-size-nm-bold color-blue hover-c-green" style="color: #8496a8;line-height: 20px;" href="#footer-1"><i class="fas fa-map-marker-alt"></i> 84 Street, City, State 24813</a><br>
+				<a class="f-size-nm-bold color-blue hover-c-green" style="color: #8496a8;line-height: 20px;" href="#footer-1"><i class="fas fa-mobile-alt"></i> +00 (123) 456 78 90</a><br>
+				<a class="f-size-nm-bold color-blue hover-c-green" style="color: #8496a8;line-height: 20px;" href="#footer-1"><i class="far fa-envelope"></i> info@reen.com</a>
+			</div>
+			<div class="footer-box-4">
+				<h2 class="f-size-md-bold mb-20">FREE UPDATES</h2>
+				<p class="f-size-nm-bold mb-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+				<form action="#footer-1" method="post">
+					<div class="flex-row- flex- between" style="width: 100%;height: 50px;background: white;">
+						<input class="input" type="email" name="" style="" placeholder="Enter your email address">
+						<button class="btn-1 btn-2 btn-hover" type="submit">SUBSCRIBE</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>	

@@ -53,6 +53,7 @@ div, span {
 }
 a {
     text-decoration: none;
+    color: black;
 }
 /*One For All*/
 .container {
@@ -65,66 +66,37 @@ a {
          -o-transform: translateX(-50%);
             transform: translateX(-50%);
 }
-[class*='flex'] {
-    display: flex;
-}
-[class*="flex-row-"] {
-    flex-flow: row wrap;
-}
+[class*='flex'] { display: flex;}
+[class*="flex-row-"] { flex-flow: row wrap;}
 .flex-between {
     height: 100%;
     justify-content: space-between;
 }
-.flex-around {
-    justify-content: space-around;
+.flex-around { justify-content: space-around;
 }
 .flex-row-center {
     align-items: center;
     justify-content: center;
     height: 100%;
 }
-.h-100 {
-    height: 100%;
-}
-.w-25 {
-    width: 25px;
-}
-.w-50 {
-    width: 70px;
-}
-.py-30 {
-    padding: 30px 0px;
-}
-.px-20 {
-    padding: 0px 20px;
-}
-.pr-20 {
-    padding-right: 20px;
-}
-.pb-20 {
-    padding-bottom: 20px;
-}
-.pb-50 {
-    padding-bottom: 50px;
-}
+.h-100 { height: 100%;}
+.w-25 { width: 25px;}
+.w-50 { width: 70px;}
+.py-30 { padding: 30px 0px;}
+.px-20 { padding: 0px 20px;}
+.pr-20 { padding-right: 20px;}
+.pb-20 { padding-bottom: 20px;}
+.pb-50 { padding-bottom: 50px;}
+.mb-20 { margin-bottom: 20px;}
 .color-blue {
     color: #506a85;
 }
-[class*=-bold] {
-    font-weight: bold;
-}
-[class*=f-size-sm] {
-    font-size: 0.8em;
-}
-[class*=f-size-md] {
-    font-size: 1.2em;
-}
-[class*=f-size-lg] {
-    font-size: 2em;
-}
-[class*=f-size-xlg] {
-    font-size: 2.7em;
-}
+[class*=-bold] { font-weight: bold;}
+[class*=f-size-sm] { font-size: 0.8em;}
+[class*=f-size-nm] { font-size: 0.9em;}
+[class*=f-size-md] { font-size: 1.2em;}
+[class*=f-size-lg] { font-size: 2em;}
+[class*=f-size-xlg] { font-size: 2.7em;}
 .main-1-text {
     width: 300px;
     font-size: 0.9em;
@@ -151,6 +123,7 @@ a {
     background-image: url('./images/carousel4.jpg');
     background-size: contain;
 }
+
 /* One for One */
 #header-sosmed {
     background: #f5f7fa;
@@ -194,21 +167,15 @@ a {
     margin-top: 50px;
     font-weight: bolder;
     color: white;
-    border: 1px solid #1b9a90;
-    border-top: none;
-    border-bottom: 2px solid #1b9a90;
+    box-shadow: 0px 2px 0px #1b9a90;
     border-radius: 3px;
 }
 .btn-2 {
     padding-left: 30px;
     padding-right: 30px;
 }
-#main-1 {
-    padding: 100px;
-}
-#main-1 h3 {
-    line-height: 25px;
-}
+#main-1 { padding: 100px;}
+#main-1 h3 { line-height: 25px;}
 #main-2 {
     background: #f2f5f7;
     padding: 100px 0px;
@@ -225,50 +192,52 @@ a {
     width: 480px;
     height: 330px;
 }
-#main-3 {
-    padding: 120px 0px;
-}
+#main-3 { padding: 120px 0px;}
 #footer-1 {
     background: #2f4052;
     padding: 70px 0px;
 }
+.thumb-box { width: 100%;}
+[class*='footer-box-'] { width: 240px;}
+[class*='thumb-img-'] {
+    width: 115px;
+    height: 72px;
+}
+[class*='thumb-img-1'] {
+    background: url('images/latest-work-thumb1.jpg');
+    background-size: contain;
+    margin-bottom: 6px;
+}
+[class*='thumb-img-2'] {
+    background: url('images/latest-work-thumb2.jpg');
+    background-size: contain;
+}
+[class*='thumb-img-3'] {
+    background: url('images/latest-work-thumb3.jpg');
+    background-size: contain;
+}
+[class*='thumb-img-4'] {
+    background: url('images/latest-work-thumb4.jpg');
+    background-size: cover;
+}
 /* HOVER */
-[class*='hover-'] {
+[class*='hover'] {
     cursor: pointer;
+    transition: all 0.3s;
 }
-[class*='hover-bg']:hover  {
-    color: white;
-}
-.hover-c-green:hover {
-    color: #37c5aa;
-}
-.hover-bg-fb:hover {
-    background: #4668b3;
-}
-.hover-bg-google:hover {
-    background: #de5745;
-}
-.hover-bg-twitter:hover {
-    background: #2fbbed;
-}
-.hover-bg-pin:hover {
-    background: #d94348;
-}
-.hover-bg-behance:hover {
-    background: #3079ff;
-}
-.hover-bg-drib:hover {
-    background: #eb6397;
-}
-.menu-hover:hover {
-    color: #37c5aa;
-}
+[class*='hover-bg']:hover  { color: white;}
+.hover-c-green:hover { color: #37c5aa!important;}
+.hover-bg-fb:hover { background: #4668b3;}
+.hover-bg-google:hover { background: #de5745;}
+.hover-bg-twitter:hover { background: #2fbbed;}
+.hover-bg-pin:hover { background: #d94348;}
+.hover-bg-behance:hover { background: #3079ff;}
+.hover-bg-drib:hover { background: #eb6397;}
+.menu-hover:hover { color: #37c5aa;}
 .btn-hover:hover {
     cursor: pointer;
     background: #17a78b;
     border: none;
-    border-bottom: 2px solid #148e76;
+    box-shadow: 0 1px 2px solid #148e76;
 }
-.hover-logo:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
+.hover-logo:hover { background: rgba(255, 255, 255, 0.5);}
