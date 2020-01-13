@@ -89,7 +89,7 @@
 			</div>
 		</div>
 		<div class="container flex-around color-blue" style="padding-top: 50px">
-			<div class="flex-row main-1-text" style="">
+			<div class="flex-row main-1-text" >
 				<span class="pr-20 w-50"><img src="assets/images/icon-heart-empty-1.png"></span>
 				<span></span>
 				<span><h1 class="f-size-lg-bold pb-20">Passion</h1><p>Magnis modipsae que lib voloratati andigen daepeditem quiate re porem aut labor. Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam core posae volor remped modis volor.</p></span>
@@ -108,7 +108,7 @@
 		<div class="container">
 			<div class="pb-50" style="text-align: center;">
 				<h1 class="f-size-xlg-bold color-blue pb-20">Check out our latest works</h1>
-				<h3 class="f-size-md-bold pb-20" style="color: #8496a8;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</h3>
+				<h3 class="f-size-md-bold pb-20 cwt" style="color: #8496a8;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</h3>
 			</div>
 			<div class="flex-between pb-50">
 				<div style="background: #fff;box-shadow: 0px 1px 2px lightgrey;">
@@ -162,22 +162,41 @@
 			</div>
 			<div class="footer-box-3">
 				<h2 class="f-size-md-bold mb-20">GET IN TOUCH</h2>
-				<p class="f-size-nm-bold mb-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Doloreiur quia commolu commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
-				<a class="f-size-nm-bold color-blue hover-c-green" style="color: #8496a8;line-height: 20px;" href="#footer-1"><i class="fas fa-map-marker-alt"></i> 84 Street, City, State 24813</a><br>
-				<a class="f-size-nm-bold color-blue hover-c-green" style="color: #8496a8;line-height: 20px;" href="#footer-1"><i class="fas fa-mobile-alt"></i> +00 (123) 456 78 90</a><br>
-				<a class="f-size-nm-bold color-blue hover-c-green" style="color: #8496a8;line-height: 20px;" href="#footer-1"><i class="far fa-envelope"></i> info@reen.com</a>
+				<p class="f-size-nm-bold mb-20 cwt" style="line-height: 20px;letter-spacing: -0.6px;">Doloreiur quia commolu commolu ptatemp dolupta oreprerum tibusam eumenis et consent accullignis dentibea autem inisita.</p>
+				<a class="f-size-nm-bold color-blue hover-c-green cwt" style="line-height: 20px;" href="#footer-1"><i class="fas fa-map-marker-alt"></i> 84 Street, City, State 24813</a><br>
+				<a class="f-size-nm-bold color-blue hover-c-green cwt" style="line-height: 20px;" href="#footer-1"><i class="fas fa-mobile-alt"></i> +00 (123) 456 78 90</a><br>
+				<a class="f-size-nm-bold color-blue hover-c-green cwt" style="line-height: 20px;" href="#footer-1"><i class="far fa-envelope"></i> info@reen.com</a>
 			</div>
 			<div class="footer-box-4">
 				<h2 class="f-size-md-bold mb-20">FREE UPDATES</h2>
-				<p class="f-size-nm-bold mb-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
+				<p class="f-size-nm-bold mb-20 cwt" style="line-height: 20px;letter-spacing: -0.6px;">Conecus iure posae volor remped modis aut lor volor accabora incim resto explabo.</p>
 				<form action="#footer-1" method="post">
-					<div class="flex-row- flex- between" style="width: 100%;height: 50px;background: white;">
-						<input class="input" type="email" name="" style="" placeholder="Enter your email address">
-						<button class="btn-1 btn-2 btn-hover" type="submit">SUBSCRIBE</button>
+					<div class="form flex-row-center flex-between">
+						<input class="input f-size-sm-bold" type="email" name="email"  placeholder="Enter your email address">
+						<button class="btn-1 btn-3 btn-hover f-size-sm-bold" type="submit" >SUBSCRIBE</button>
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>	
+	<div id="footer-2">
+		<div class="container flex-between"> 
+			<div style=""><p class="f-size-nm-bold cwt">2014 REEN. All rights reserved.</p></div>
+			<div class="flex-row-center">
+				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Home </a>
+					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
+				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Portofolio </a>
+					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
+				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Blog </a>
+					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
+				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> About </a>
+					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
+				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Services </a>
+					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
+				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Contact </a>
+				<a href="#header-title" class="arrow-up cwt hover-c-green f-size-sm"><i class="fas fa-chevron-up f-size-lg"></i></a>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
