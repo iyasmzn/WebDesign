@@ -37,14 +37,14 @@
 		<div style="width: 600px;">
 			<div class="flex-row-center">
 				<div class="flex-around" style="font-weight: bold;width: 100%;">
-					<span style="position: relative;">
+					<span class="mennu" style="position: relative;z-index: 99;">
 						<a class="menu-hover color-blue" href="">HOME</a>	
 						<span class="menu-dropdown">
-							<a class="menu-hover" href="">AGENCY STYLE</a>
-							<a class="menu-hover" href="">PRODUCT STYLE</a>
-							<a class="menu-hover" href="">SERVICE STYLE</a>
-							<a class="menu-hover" href="">PORTOFOLIO STYLE</a>
-							<a class="menu-hover" href="">SHOWCASE STYLE</a>
+							<a class="hover-c-green" href="">AGENCY STYLE</a>
+							<a class="hover-c-green" href="">PRODUCT STYLE</a>
+							<a class="hover-c-green" href="">SERVICE STYLE</a>
+							<a class="hover-c-green" href="">PORTOFOLIO STYLE</a>
+							<a class="hover-c-green" href="">SHOWCASE STYLE</a>
 						</span>
 					</span>
 					<span>
@@ -69,7 +69,7 @@
 			</div>
 		</div>
 		<div>
-			<div class="flex-row-center color-blue" style="width: 200px;justify-content: flex-end;padding-right: 30px;"><i class="fa fa-search"></i></div>
+			<div class="flex-row-center" style="width: 200px;justify-content: flex-end;padding-right: 30px;"><a href="#" class="color-blue hover-c-green"><i class="fa fa-search"></i></a></div>
 		</div>
 	</div>
 	<div id="header-title">
@@ -111,26 +111,50 @@
 				<h3 class="f-size-md-bold pb-20 cwt" style="color: #8496a8;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.</h3>
 			</div>
 			<div class="flex-between pb-50">
-				<div style="background: #fff;box-shadow: 0px 1px 2px lightgrey;">
-					<div id="main-2-bg-1"></div>
+				<div class="main-bg-hover" style="background: #fff;box-shadow: 0px 1px 2px lightgrey;">
+					<div class="main-2-bg-1"><div class="hover-gallery">
+						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
+					</div></div>
 					<div class="py-30" style="text-align: center;">
-						<h3 class="f-size-md-bold color-blue" style="padding-bottom: 10px">Grand Motel gets an identity brushup</h3>
+						<h3 class="f-size-md-bold color-blue" style="padding-bottom: 10px;transition: all 0.3s;">Grand Motel gets an identity brushup</h3>
 						<h5 class="f-size-sm-bold" style="color: #8496a8;">Identity</h5>
 					</div>
 				</div>
-				<div style="background: #fff;box-shadow: 0px 1px 2px lightgrey;">
-					<div id="main-2-bg-2"></div>
+				<div class="main-bg-hover" style="background: #fff;box-shadow: 0px 1px 2px lightgrey;">
+					<div class="main-2-bg-2"><div class="hover-gallery">
+						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
+					</div></div>
 					<div class="py-30" style="text-align: center;">
-						<h3 class="f-size-md-bold color-blue" style="padding-bottom: 10px">Fresh branding for a creative startup</h3>
+						<h3 class="f-size-md-bold color-blue" style="padding-bottom: 10px;transition: all 0.3s;">Fresh branding for a creative startup</h3>
 						<h5 class="f-size-sm-bold" style="color: #8496a8;">Identity</h5>
 					</div>
 				</div>
 			</div>
 			<div class="flex-row flex-between">
-				<div class="carousel-car-1"></div>
-				<div class="carousel-car-2"></div>
-				<div class="carousel-car-3"></div>
-				<div class="carousel-car-4"></div>
+				<div class="carousel-car-1"><div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Simple Nota</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
+				</div></div>
+				<div class="carousel-car-2"><div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Vinyl Record</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
+				</div></div>
+				<div class="carousel-car-3"><div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Astor & Yancy</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
+				</div></div>
+				<div class="carousel-car-4"><div class="hover-gallery">
+					<div class="hover-bg-plus flex cwt"><div>
+						<h3 class="f-size-md-bold pb-10">Signwall</h3>
+						<p class="f-size-sm">Identity</p>
+					</div></div>
+				</div></div>
 			</div>
 		</div>
 	</div>
@@ -147,17 +171,25 @@
 		<div class="container flex-row flex-between" style="color: white;">
 			<div class="footer-box-1">
 				<h2 class="f-size-md-bold mb-20">WHO WE ARE</h2>
-				<img class="mb-20" src="assets/images/logo.png" style="width: 120px;">
-				<p class="f-size-nm-bold mb-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.<br>Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
-				<a class="f-size-md-bold hover-c-green" href="#footer-1" style="color: #8496a8">More about us <i class="fa fa-arrow-right"></i></a>
+				<a href="#header-title"><img class="grayscale hover-logo" src="assets/images/logo.png" style="width: 120px;"></a>
+				<p class="f-size-nm-bold mb-20 mt-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.<br>Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
+				<a class="f-size-nm-bold hover-c-green" href="#footer-1" style="color: #8496a8">More about us <i class="fa fa-arrow-right"></i></a>
 			</div>
 			<div class="footer-box-2">
 				<h2 class="f-size-md-bold mb-20">LATEST WORKS</h2>
 				<div class="thumb-box flex-row- flex-between" style="height: auto;">
-					<div class="thumb-img-1"></div>
-					<div class="thumb-img-2"></div>
-					<div class="thumb-img-3"></div>
-					<div class="thumb-img-4"></div>
+					<div class="thumb-img-1"><div class="hover-gallery">
+						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
+					</div></div>
+					<div class="thumb-img-2"><div class="hover-gallery">
+						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
+					</div></div>
+					<div class="thumb-img-3"><div class="hover-gallery">
+						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
+					</div></div>
+					<div class="thumb-img-4"><div class="hover-gallery">
+						<div class="hover-bg-plus flex"><i class="fas fa-plus f-size-md cwt"></i></div>
+					</div></div>
 				</div>
 			</div>
 			<div class="footer-box-3">
@@ -181,7 +213,7 @@
 	</div>	
 	<div id="footer-2">
 		<div class="container flex-between"> 
-			<div style=""><p class="f-size-nm-bold cwt">2014 REEN. All rights reserved.</p></div>
+			<div style=""><p class="f-size-nm-bold cwt">2020 REEN. All rights reserved.</p></div>
 			<div class="flex-row-center">
 				<a class="f-size-nm-bold cwt hover-c-green px-7" href="#footer-2"> Home </a>
 					<i class="fas fa-circle cwt" style="font-size: 0.2em;"></i>
@@ -197,6 +229,6 @@
 				<a href="#header-title" class="arrow-up cwt hover-c-green f-size-sm"><i class="fas fa-chevron-up f-size-lg"></i></a>
 			</div>
 		</div>
-	</div>
+	</div>	
 </body>
 </html>
