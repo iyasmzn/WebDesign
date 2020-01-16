@@ -68,10 +68,42 @@
 				</div>
 			</div>
 		</div>
-		<div>
-			<div class="flex-row-center" style="width: 200px;justify-content: flex-end;padding-right: 30px;"><a href="#" class="color-blue hover-c-green"><i class="fa fa-search"></i></a></div>
+		<div style="width: 195px">
+			<div class="flex-row-center" style="justify-content: flex-end;padding-right: 30px;"><a href="#" class="color-blue hover-c-green"><i class="fa fa-search"></i></a></div>
 		</div>
 	</div>
+	<!-- <div id="navbar">
+		<div class="container">
+			<nav>
+				<div>
+					<a href="http://locahttp://localhost/web_design/css_responsive_ust_alfin/ign/css_responsive_ust_alfin/"><img src="assets/images/logo.png"></a>
+				</div>
+				<div>
+					<ul>
+						<li>
+							<a class="menu-hover color-blue" href="">HOME</a>
+							<div>
+								<a class="hover-c-green" href="">AGENCY STYLE</a>
+								<a class="hover-c-green" href="">PRODUCT STYLE</a>
+								<a class="hover-c-green" href="">SERVICE STYLE</a>
+								<a class="hover-c-green" href="">PORTOFOLIO STYLE</a>
+								<a class="hover-c-green" href="">SHOWCASE STYLE</a>
+							</div>
+						</li>
+						<li><a class="color-blue menu-hover" href="">PORTOFOLIO</a></li>
+						<li><a class="color-blue menu-hover" href="">BLOG</a></li>
+						<li><a class="color-blue menu-hover" href="">PAGES</a></li>
+						<li><a class="color-blue menu-hover" href="">FEATURES</a></li>
+						<li><a class="color-blue menu-hover" href="">MEGA MENU</a></li>
+						<li><a class="color-blue menu-hover" href="">CONTACT</a></li>
+					</ul>
+				</div>
+				<div>
+					<a href="" class="hover-c-green"><i class="fas fa-search"></i></a>
+				</div>
+			</nav>
+		</div>
+	</div> -->
 	<div id="header-title">
 		<div class="container flex-row-center" style="text-align: center;height: 100%;">
 			<div style="width: 800px">
@@ -171,7 +203,7 @@
 		<div class="container flex-row flex-between" style="color: white;">
 			<div class="footer-box-1">
 				<h2 class="f-size-md-bold mb-20">WHO WE ARE</h2>
-				<a href="#header-title"><img class="grayscale hover-logo" src="assets/images/logo.png" style="width: 120px;"></a>
+				<a href="http://localhost/web_design/css_responsive_ust_alfin/"><img class="grayscale hover-logo" src="assets/images/logo.png" style="width: 120px;"></a>
 				<p class="f-size-nm-bold mb-20 mt-20" style="color: #8496a8;line-height: 20px;letter-spacing: -0.6px;">Magnis modipsae que voloratati andigen daepeditem quiate re porem aut labor.<br>Laceaque quiae sitiorem rest non restibusaes maio es dem tumquam.</p>
 				<a class="f-size-nm-bold hover-c-green" href="#footer-1" style="color: #8496a8">More about us <i class="fa fa-arrow-right"></i></a>
 			</div>
