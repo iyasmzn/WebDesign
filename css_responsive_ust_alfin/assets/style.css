@@ -134,6 +134,14 @@ a {
     display: block;
     padding: 17px;
     transition: all 0s;
+    /*overflow: hidden;*/
+}
+a {
+    /*border: 1px solid red;*/
+}
+.a-full {
+    display: block;
+
 }
 /* One for One */
 #header-sosmed {
@@ -328,7 +336,7 @@ a {
 .mennu:hover .menu-dropdown {
     display: block;
 }
-.mennu:hover > a {
+.mennu:hover > p {
     color: #37c5aa;
 }
 .menu-hover-drop:hover {

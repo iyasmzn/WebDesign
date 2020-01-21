@@ -37,7 +37,7 @@
 			</div>
 			<div class="menu-link flex-row">
 				<div class="menu-hover mennu">
-					<a class="color-blue -bold hover-c-green" href="#">HOME</a>
+					<p class="color-blue -bold a-full" href="#">HOME</p>
 					<ul class="menu-dropdown">
 						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">AGENCY STYLE</a></li>
 						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">PRODUCT STYLE</a></li>
@@ -46,12 +46,12 @@
 						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">SHOWCASE STYLE</a></li>
 					</ul>
 				</div>
-				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">PORTOFOLIO</a></div>
-				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">BLOG</a></div>
-				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">PAGES</a></div>
-				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">FEATURES</a></div>
-				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">MEGA MENU</a></div>
-				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">CONTACT</a></div>
+				<div class=""><a class="menu-hover color-blue -bold hover-c-green" href="#">PORTOFOLIO</a></div>
+				<div><a class="menu-hover color-blue -bold hover-c-green" href="#">BLOG</a></div>
+				<div><a class="menu-hover color-blue -bold hover-c-green" href="#">PAGES</a></div>
+				<div><a class="menu-hover color-blue -bold hover-c-green" href="#">FEATURES</a></div>
+				<div><a class="menu-hover color-blue -bold hover-c-green" href="#">MEGA MENU</a></div>
+				<div><a class="menu-hover color-blue -bold hover-c-green" href="#">CONTACT</a></div>
 			</div>
 			<div>
 				<div class="flex-row-center">
