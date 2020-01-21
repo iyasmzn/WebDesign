@@ -59,6 +59,7 @@ a {
 .container {
     width: 1000px;
     position: relative;
+    z-index: 1;
     left: 50%;
     -webkit-transform: translateX(-50%);
        -moz-transform: translateX(-50%);
@@ -93,6 +94,8 @@ a {
 .mb-20 { margin-bottom: 20px;}
 .color-blue {
     color: #506a85;
+}.color-muted {
+    color: #73879c;
 }
 .cwt { color: rgba(255, 255, 255, 0.5);}
 [class*=-bold] { font-weight: bold;}
@@ -124,9 +127,13 @@ a {
     background-image: url('./images/carousel4.jpg');
     background-size: contain;
 }
-.menu-hover {
-    padding: 10px;
-    transition: background 0.3s padding 0s;
+.menu-box {
+    justify-content: space-between;
+}
+[class*='menu-hover'] {
+    display: block;
+    padding: 17px;
+    transition: all 0s;
 }
 /* One for One */
 #header-sosmed {
@@ -134,14 +141,22 @@ a {
     height: 35px;
     border-bottom: 2px solid #eceef1;
 }
+.mennu {
+    position: relative;
+    z-index: 20;
+    /*border: 1px solid #e6e9ed;*/
+}
 .menu-dropdown {
     position: absolute;
-    left: 0;top: 180%;
+    left: 0;top: 100%;
     background: #f5f7fa;
-    box-shadow: 0px 0px 2px gray;
+    box-shadow: 0px 1px 1px gray;
     color: #37c5aa;
-    z-index: 99;
+    z-index: 19;
     display: none;
+    width: 200px;
+    border-radius: 0px 3px 3px 3px;
+    overflow: hidden;
 }
 #header-title {
     height: 700px;
@@ -149,7 +164,7 @@ a {
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 #header-title h1 {
     font-size: 5em;
@@ -265,7 +280,7 @@ a {
 .hover-gallery {
     width: 100%;
     height: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
     background: rgba(5, 161, 135, 0.7);
     position: absolute;
     opacity: 0;
@@ -291,8 +306,9 @@ a {
 .hover-bg-drib:hover { background: #eb6397;}
 .menu-hover:hover { 
     background: #f5f7fa;
-    box-shadow: 0px 0px 2px gray;
+    box-shadow: 0px 1px 1px gray;
     color: #37c5aa;
+    transition: all 0s;
 }
 .btn-hover:hover {
     cursor: pointer;
@@ -312,6 +328,20 @@ a {
 .mennu:hover .menu-dropdown {
     display: block;
 }
+.mennu:hover > a {
+    color: #37c5aa;
+}
+.menu-hover-drop:hover {
+    color: #ffffff;
+    background: #37c5aa;
+}
 
 /* filter */
 .grayscale { filter: brightness(500%) grayscale(0);}
+
+/* sticky header */
+.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

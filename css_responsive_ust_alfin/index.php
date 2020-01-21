@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- My Style CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<!-- Font Awesome 5 -->
@@ -29,81 +30,36 @@
 			</div>
 		</div>   
 	</div>
-	<div class="container flex-between" style="flex-flow: row wrap;">
-		<div class="py-30 hover-logo" style="width: 200px;position: relative;">
-			<img src="assets/images/logo.png">
-			<a class="hover-logo" href="#"></a>
-		</div>
-		<div style="width: 600px;">
-			<div class="flex-row-center">
-				<div class="flex-around" style="font-weight: bold;width: 100%;">
-					<span class="mennu" style="position: relative;z-index: 99;">
-						<a class="menu-hover color-blue" href="">HOME</a>	
-						<span class="menu-dropdown">
-							<a class="hover-c-green" href="">AGENCY STYLE</a>
-							<a class="hover-c-green" href="">PRODUCT STYLE</a>
-							<a class="hover-c-green" href="">SERVICE STYLE</a>
-							<a class="hover-c-green" href="">PORTOFOLIO STYLE</a>
-							<a class="hover-c-green" href="">SHOWCASE STYLE</a>
-						</span>
-					</span>
-					<span>
-						<a class="color-blue menu-hover" href="">PORTOFOLIO</a>	
-					</span>
-					<span>
-						<a class="color-blue menu-hover" href="">BLOG</a>	
-					</span>
-					<span>
-						<a class="color-blue menu-hover" href="">PAGES</a>	
-					</span>
-					<span>
-						<a class="color-blue menu-hover" href="">FEATURES</a>	
-					</span>
-					<span>
-						<a class="color-blue menu-hover" href="">MEGA MENU</a>					
-					</span>
-					<span>
-						<a class="color-blue menu-hover" href="">CONTACT</a>						
-					</span>
+	<div id="navbar">
+		<div class="menu-box container flex-row py-30">
+			<div>
+				<a href="#"><img class="hover-logo" src="assets/images/logo.png"></a>
+			</div>
+			<div class="menu-link flex-row">
+				<div class="menu-hover mennu">
+					<a class="color-blue -bold hover-c-green" href="#">HOME</a>
+					<ul class="menu-dropdown">
+						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">AGENCY STYLE</a></li>
+						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">PRODUCT STYLE</a></li>
+						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">SERVICE STYLE</a></li>
+						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">PORTOFOLIO STYLE</a></li>
+						<li><a class="f-size-sm-bold color-muted menu-hover-drop" href="#">SHOWCASE STYLE</a></li>
+					</ul>
+				</div>
+				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">PORTOFOLIO</a></div>
+				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">BLOG</a></div>
+				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">PAGES</a></div>
+				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">FEATURES</a></div>
+				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">MEGA MENU</a></div>
+				<div class="menu-hover"><a class="color-blue -bold hover-c-green" href="#">CONTACT</a></div>
+			</div>
+			<div>
+				<div class="flex-row-center">
+					<a class="color-blue hover-c-green" href="#"><i class="fas fa-search"></i></a>					
 				</div>
 			</div>
 		</div>
-		<div style="width: 195px">
-			<div class="flex-row-center" style="justify-content: flex-end;padding-right: 30px;"><a href="#" class="color-blue hover-c-green"><i class="fa fa-search"></i></a></div>
-		</div>
 	</div>
-	<!-- <div id="navbar">
-		<div class="container">
-			<nav>
-				<div>
-					<a href="http://locahttp://localhost/web_design/css_responsive_ust_alfin/ign/css_responsive_ust_alfin/"><img src="assets/images/logo.png"></a>
-				</div>
-				<div>
-					<ul>
-						<li>
-							<a class="menu-hover color-blue" href="">HOME</a>
-							<div>
-								<a class="hover-c-green" href="">AGENCY STYLE</a>
-								<a class="hover-c-green" href="">PRODUCT STYLE</a>
-								<a class="hover-c-green" href="">SERVICE STYLE</a>
-								<a class="hover-c-green" href="">PORTOFOLIO STYLE</a>
-								<a class="hover-c-green" href="">SHOWCASE STYLE</a>
-							</div>
-						</li>
-						<li><a class="color-blue menu-hover" href="">PORTOFOLIO</a></li>
-						<li><a class="color-blue menu-hover" href="">BLOG</a></li>
-						<li><a class="color-blue menu-hover" href="">PAGES</a></li>
-						<li><a class="color-blue menu-hover" href="">FEATURES</a></li>
-						<li><a class="color-blue menu-hover" href="">MEGA MENU</a></li>
-						<li><a class="color-blue menu-hover" href="">CONTACT</a></li>
-					</ul>
-				</div>
-				<div>
-					<a href="" class="hover-c-green"><i class="fas fa-search"></i></a>
-				</div>
-			</nav>
-		</div>
-	</div> -->
 	<div id="header-title">
 		<div class="container flex-row-center" style="text-align: center;height: 100%;">
 			<div style="width: 800px">
@@ -262,5 +218,19 @@
 			</div>
 		</div>
 	</div>	
+	<script type="text/javascript" src="assets/script.js">
+		window.onscroll = function() {myFunction()};
+
+		var header = document.getElementById("navbar");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset > sticky) {
+		    header.classList.add("sticky");
+		  } else {
+		    header.classList.remove("sticky");
+		  }
+		}
+	</script>
 </body>
 </html>
